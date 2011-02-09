@@ -5,13 +5,26 @@
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %>
   </head>
+	
   <body>
-    <div class="container showgrid">
+    <div class="container">
+		
       <%= render 'layouts/header' %>
-      <section class=" ">
+			
+			<div class = "span-6">
+				&nbsp;
+			</div>
+			
+      <div class="span-12">
         <%= yield %>
-      </section>
+      </div>
+			
+			<div class = "span-6 last">
+				&nbsp;
+			</div>
+			
 			<%= render 'layouts/footer' %>
     </div>
   </body>
+	
 </html>
