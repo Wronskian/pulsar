@@ -18,6 +18,7 @@ nav ul li a {
   padding: 0 5px;
   font-weight: bold;
 	text-decoration: none;
+	color: #000;
 }
 
 nav ul li a:visited {
