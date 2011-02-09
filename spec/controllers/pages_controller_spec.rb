@@ -12,13 +12,14 @@ describe PagesController do
 		pages.each do |page|
 		
 			it "should be successful" do 
-				get page.downcase
+				get page.downcase #downcase is necessary to GET proper controller action
 				response.should be_success 
 			end
 			
 			it "should have the right title" do 
-				get page.downcase
-				response.should have_selector("title", :content => "#{base_title} | #{page}") 
+				get page.downcase #downcase is necessary to GET proper controller action
+				response.should have_selector("title", 
+				                              :content => "#{base_title} | #{page}") 
 			end
 			
 		end	
