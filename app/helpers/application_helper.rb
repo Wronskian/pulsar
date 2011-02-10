@@ -8,5 +8,9 @@ module ApplicationHelper
 			"#{base_title} | #{@title}"
 		end
 	end
+	
+	def logo
+		image_tag("logo.png", :alt => "Pulsar Logo")
+	end
 
 end
