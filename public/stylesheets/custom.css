@@ -51,3 +51,40 @@ padding: 0;
 background-color: #FFF;
 height: 34px;
 }
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+	border: 1px solid #000;
+  text-align: center;
+  width: 158px;
+  color: #fff;
+  background: #000;
+  padding: 8px;
+	text-decoration: none;
+}
+
+a.signup_button:hover {
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+	border: 1px solid #000;
+  text-align: center;
+  width: 158px;
+  color: #000;
+  background: #FFF;
+  padding: 8px;
+	text-decoration: none;
+}
+
+a {
+	color: #00F;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #00F;
+	text-decoration: none;
+	font-weight: bold;
+}
