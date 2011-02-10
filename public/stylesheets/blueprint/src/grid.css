@@ -152,7 +152,7 @@ input.span-24, textarea.span-24 { width: 938px; }
 .border {
   padding-right: 4px;
   margin-right: 5px;
-  border-right: 1px solid #ddd;
+  border-right: 5px solid #000;
 }
 
 /* Border with more whitespace, spans one column. */

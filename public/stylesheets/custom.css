@@ -1,6 +1,7 @@
 nav {
   background-color: white;
   white-space: nowrap;
+	text-align: center;
 }
 
 nav ul {
@@ -30,5 +31,23 @@ nav ul li a:hover {
 }
 
 footer {
-text-align: center;
+	text-align: center;
+}
+
+.box-left {
+border: 1px solid #000;
+border-right: 0px;
+margin: 0;
+padding: 0;
+background-color: #FFF;
+height: 34px;
+}
+
+.box-right {
+border: 1px solid #000;
+border-left: 0px;
+margin: 0;
+padding: 0;
+background-color: #FFF;
+height: 34px;
 }
