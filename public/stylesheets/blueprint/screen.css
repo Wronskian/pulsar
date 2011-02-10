@@ -40,8 +40,8 @@ p {margin:0 0 1.5em;}
 p .left {margin:1.5em 1.5em 1.5em 0;padding:0;}
 .right {float:right !important;}
 p .right {margin:1.5em 0 1.5em 1.5em;padding:0;}
-a:focus, a:hover {color:#09f;}
-a {color:#06c;text-decoration:underline;}
+a:focus, a:hover {color:#000;text-decoration:overline;}
+a {color:#00F;text-decoration:underline;}
 blockquote {margin:1.5em;color:#666;font-style:italic;}
 strong, dfn {font-weight:bold;}
 em, dfn {font-style:italic;}
@@ -96,7 +96,7 @@ form.inline p {margin-bottom:0;}
 .error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
 .error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
 .notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
-.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.success {background:#e6efc2;color:#264409;border:1px solid #000;}
 .info {background:#d5edf8;color:#205791;border-color:#92cae4;}
 .error a, .alert a {color:#8a1f11;}
 .notice a {color:#514721;}

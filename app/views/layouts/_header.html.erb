@@ -4,12 +4,14 @@
 		<%= link_to logo, root_path %>
 	</div>
 	
-	<nav class="span-6 last box-right">
-		<ul>
-			<li><%= link_to "Sign Up", signup_path %></li>
-			or
-			<li><%= link_to "Log In", "#" %></li>
-		</ul>
+	<nav class="span-3 box-right">
+		New User? <br />
+		<%= link_to "Sign Up", signup_path %>
+	</nav>
+	
+	<nav class = "span-3 last box-right">
+		Existing User? <br />
+		<%= link_to "Log In", "#" %>
 	</nav>
 	
 	<div class = "span-6">&nbsp;</div>
