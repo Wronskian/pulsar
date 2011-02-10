@@ -3,7 +3,7 @@
 <%= form_for(@user) do |f| %>
 <%= render 'shared/error_messages' %>
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, "Username" %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
@@ -15,7 +15,7 @@
     <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.label :password_confirmation, "Password Confirm" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
