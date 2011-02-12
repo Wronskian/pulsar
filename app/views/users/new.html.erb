@@ -3,22 +3,24 @@
 <%= form_for(@user) do |f| %>
 <%= render 'shared/error_messages' %>
   <div class="field">
-    <%= f.label :name, "Username" %><br />
-    <%= f.text_field :name %>
+    <%= f.label :name, "Username" %><br>
+    <%= f.text_field :name, :size => "26" %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.label :email %><br>
+    <%= f.text_field :email, :size => "26"  %>
   </div>
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
+    <%= f.label :password %><br>
+    <%= f.password_field :password, :size => "26"  %>  <font class = "small">Needs to be at least 6 characters long.</font>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, "Password Confirm" %><br />
-    <%= f.password_field :password_confirmation %>
+    <%= f.label :password_confirmation, "Password Confirm" %><br>
+    <%= f.password_field :password_confirmation, :size => "26"  %>  <font class = "small">Retype your password.</font>
   </div>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
+
+<br />

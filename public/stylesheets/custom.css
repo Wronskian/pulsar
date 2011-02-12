@@ -39,8 +39,6 @@ height: 34px;
 }
 
 a.signup_button {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
 	border: 1px solid #000;
   text-align: center;
@@ -53,20 +51,28 @@ a.signup_button {
 }
 
 .field_with_errors {
+  margin-top: 5px;
   background-color: #F00;
+	display: inline;
 }
 
 .field_with_errors label {
   color: #fff;
+	padding: 2px;
+	display: inline;
+}
+
+.field_with_errors input {
+	border: 2px solid #F00;
 }
 
 #error_explanation {
+  width: 382px;
   border: 2px solid #F00;
-  padding: 7px;
-	padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
+  padding-bottom: 0px;
   margin-bottom: 10px;
-	margin-top: 10px;
+	margin-top: -5px;
   background-color: #FFF;
 }
 
@@ -77,17 +83,16 @@ a.signup_button {
   font-size: 12px;
   margin: -7px;
   background-color: #F00;
-  color: #fff;
+  color: #FFF;
 }
 
 #error_explanation p {
-  color: #333;
-  margin-bottom: 0;
-	margin-top: 10px;
-  padding: 5px;
+  color: #000;
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding: 5px;
 }
 
 #error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+	padding: 0;
 }
