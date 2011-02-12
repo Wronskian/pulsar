@@ -67,7 +67,7 @@ describe UsersController do
 
       it "should have the right title" do
         post :create, :user => @attr
-        response.should have_selector("title", :content => "Sign up")
+        response.should have_selector("title", :content => "Sign Up")
       end
 
       it "should render the 'new' page" do
@@ -91,8 +91,13 @@ describe UsersController do
 
       it "should redirect to the user show page" do
         post :create, :user => @attr
-        response.should redirect_to(user_path(assigns(:user)))
-      end    
+        response.should render_template('show')
+      end
+			
+			it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
+      end
     end
   end
 

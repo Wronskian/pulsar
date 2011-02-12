@@ -19,6 +19,8 @@ module ApplicationHelper
 				render "users/new-left-sidebar"
 			when @title == "Home"
 				render "pages/home-left-sidebar"
+			when @title == "Sign In"
+				render "sessions/new-left-sidebar"
 		end
 	end
 

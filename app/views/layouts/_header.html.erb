@@ -3,17 +3,27 @@
 	<div class = "span-12">
 		<%= link_to logo, root_path %>
 	</div>
-	
-	<nav class="span-3 box-right">
-		New User? <br />
-		<%= link_to "Sign Up", signup_path %>
+
+	<nav class = "span-3 box-right">
+		<% if signed_in? %>
+			<%= current_user.name %> </br />
+			<%= link_to "Profile", current_user %>
+		<% else %>
+			New User?<br />
+			<%= link_to "Sign Up", signup_path %>
+		<% end %>
 	</nav>
 	
 	<nav class = "span-3 last box-right">
-		Existing User? <br />
-		<%= link_to "Log In", "#" %>
+		<% if signed_in? %>
+			<br />
+			<%= link_to "Sign Out", signout_path, :method => :delete %>
+		<% else %>
+			Existing User?<br />
+			<%= link_to "Sign In", signin_path %>
+		<% end %>
 	</nav>
-	
+
 	<div class = "span-6">&nbsp;</div>
 	
 	<div class = "span-12">
