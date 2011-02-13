@@ -17,6 +17,8 @@ module ApplicationHelper
 		case
 			when @title == "Sign Up"
 				render "users/new-left-sidebar"
+			when @title == @user.name
+				render "users/show-left-sidebar"
 			when @title == "Home"
 				render "pages/home-left-sidebar"
 			when @title == "Sign In"
